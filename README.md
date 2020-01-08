@@ -4,7 +4,8 @@ svn_to_git
 
  authors file is a user names binding file structured like this:
 
- gitname = Firstname Lastname <firstname.lastname@company.com>
- gitname2 = Firstname2 Lastname <firstname.lastname2@company.com>
+ gitname = Firstname Lastname \<firstname.lastname@company.com\>
+ 
+ gitname2 = Firstname2 Lastname \<firstname.lastname2@company.com\>
  ...
 
