@@ -16,7 +16,7 @@
 git svn clone --stdlayout --authors-file=$1 $2 $3
 cd $3
 ### Parse remote "tags", convert to local tag and delete remotes
-git for-each-ref refs/remotes/tags | cut -d / -f 4- | grep -v @ | while read tagname; do git tag $tagname tags/$tagname; git branch -r -d tags/$tagname; done
+git for-each-ref refs/remotes/origin/tags | cut -d / -f 5- | grep -v @ | while read tagname; do git tag $tagname origin/tags/$tagname; git branch -r -d origin/tags/$tagname; done
 ### Parse remote branches, convert to local branches and delete remotes
 git for-each-ref refs/remotes | cut -d / -f 4- | grep -v @ | while read branchname; do git branch $branchname origin/$branchname; git branch -r -d origin/$branchname; done
 ### Delete trunk (useless, was converted to master)
