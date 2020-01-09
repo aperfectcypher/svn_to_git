@@ -25,3 +25,4 @@ git branch -D trunk
 git remote add origin $4
 ### push everything to new remote
 git push -u origin --all
+git push -u origin --tags
