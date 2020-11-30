@@ -2,7 +2,7 @@
 
 #Arguments
 #################################################################
-# ./svn_to_git.sh [authors-file] [svn url] [git repo name] [Remote URL]
+# ./svn_to_git.sh authors_file svn_url git_repo_name git_remote_url
 #
 # authors file is a user names binding file structured like this:
 #
